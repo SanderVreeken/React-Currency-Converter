@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+:root {
+  --main-bg-color: #F7FBFD;
+  --main-component-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0px;
+  background-color: var(--main-bg-color);
+  font-family: 'Oswald', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+hr {
+  margin: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.application {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--main-bg-color);
+}
+
+.main-card {
+  margin-top: 5vh;
+  margin-left: 16vw;
+  height: 95vh;
+  width: 64vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--main-component-color);
+}
+
+.main-header {
+  height: 52px;
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border-bottom: 2.4px solid var(--main-bg-color);
 }
 
-.App-link {
-  color: #61dafb;
+.header-label {
+  margin: 0px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.conversion-cards {
+  margin-top: 24px;
+  height: 178px;
+  width: 89%;
+  display: flex;
+}
+
+.valuta-card {
+  height: 100%;
+  width: 50%;
+}
+
+.valuta-card-header {
+  height: 28%;
+  display: flex;
+  align-items: center;
+}
+
+.valuta-selector {
+  margin-left: 16px;
+  border: none;
+  color: black;
+}
+
+.valuta-card-main {
+  height: 72%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.valuta-form {
+  display: flex;
+  justify-content: center;
+}
+
+.amount-input {
+  text-align: center;
+  width: 100%;
+  font-size: 2.6em;
+  border: none;
+  color: #22222E;
+}
+
+.light-blue {
+  background-color: #E5E5FF;
+}
+
+.white {
+  background-color: white;
 }
